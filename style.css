@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&family=Poppins&family=Roboto&family=Roboto+Condensed&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* header */
+header {
+   height: 100vh;
+   width: 100%;
+   background: url(media/15.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+
+}
+#check {
+   display: none;
+}
+.bars {
+   position: relative;
+   top: 35%;
+   right: 40px;
+   font-size: 1.5rem;
+   cursor: pointer;
+   display: none;
+
+   
+}
+
+.header-text {
+   margin-bottom: 100px;
+   color: whitesmoke;
+   
+}
+.header-text h4 {
+   font-family: 'Josefin Sans', sans-serif;
+   margin-bottom: 20px;
+   text-align: center;
+   font-weight: lighter;
+   font-style: italic;
+   font-size: 2.5vmin;
+
+}
+.header-text h1 {
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 10vmin;
+   text-align: center;
+   font-style: italic;
+}
+.header-text span {
+   color: orange;
+}
+
+/* Intro Section */
+.intro {
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 8%;
+}
+.intro img {
+   height: 500px;
+   width: 500px;
+}
+.intro .intro-text {
+   width: 50%;
+   margin-top: 6%;
+}
+.intro .intro-text h1 {
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 7vmin;
+   font-weight: 800;
+}
+.intro .intro-text span {
+   color: orangered;
+}
+.intro .intro-text p {
+   font-family: 'Josefin Sans', sans-serif;
+   text-align: justify;
+   width: 70%;
+   color: rgb(100, 97, 97);
+   margin-top: 20px;
+}
+
+/* Main section */
+.main {
+   width: 100%;
+   margin-top: 100px;
+
+}
+.main .main-text {
+   margin: 0 85px;
+}
+.main-text h1 {
+   font-size: 2.5rem;
+   font-family: 'Josefin Sans', sans-serif;
+}
+.main-text span {
+   color: orangered;
+}
+.main-text p {
+   font-family: 'Josefin Sans', sans-serif;
+   margin-top: 20px;
+
+}
+
+.main-images {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 40px;
+
+}
+.main-images .image1 {
+   width: 350px;
+   height: 480px;
+   background-color: rgb(232, 241, 240);
+   margin: 20px 10px;
+}
+.main-images .image1 img {
+   width: 350px;
+   height: 300px;
+}
+.main-images .image1:hover {
+   background-color: orange;
+   transition: all ease 0.5s;  
+}
+.main-images .image1:hover h2 {
+   color: rgb(14, 13, 13);
+   transition: all ease 0.5s;
+}
+
+.main-images .prize {
+   display: flex;
+   justify-content: space-between;
+   margin: 15px 15px;
+}
+.main-images .prize h1 {
+   font-family: 'Roboto', sans-serif;
+   cursor: pointer;
+}
+.main-images .prize h2 {
+   font-family: cursive;
+   color: orangered;
+}
+.main-images p {
+   padding: 10px 15px;
+   font-family: 'Roboto', sans-serif;
+   color: rgb(54, 52, 52);
+   font-weight: bold;
+}
+
+/* Reservation Section */
+.reservation {
+   height: 70vh;
+   margin-top: 10%;
+   background-color: aliceblue;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: url(media/13.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.reservation .reservation-text {
+  color: white;
+}
+.reservation .reservation-text h1 {
+   font-family: 'Roboto', sans-serif;
+   font-size: 7vmin;
+}
+.reservation .reservation-text p {
+   margin: 10px auto;
+   text-align: center;
+   font-size: 3.4vmin;
+   text-transform: capitalize;
+   font-family: 'Roboto Condensed', sans-serif;
+   font-style: italic;
+}
+.reservation button {
+   padding: 12px 25px;
+   margin-top: 20px;
+   background: orange;
+   border: none;
+   font-size: 1rem;
+   font-family: 'Roboto Condensed', sans-serif;
+   font-weight: bold;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+.reservation button:hover {
+   background-color: transparent;
+   border: 1px solid orange;
+   transition: all 0.5s ease;
+   color: orangered;  
+}
+
+/*Special Item Section */
+.special-item {
+   margin-top: 10%;
+}
+.special-item .item-text {
+   text-align: center;
+}
+.special-item .item-text h1 {
+   font-family: 'Roboto Condensed', sans-serif;
+   font-size: 6vmin;
+}
+.special-item .item-text span {
+   color: rgb(255, 166, 0);
+}
+.special-item .item-text p {
+   font-family: 'Roboto Condensed', sans-serif;
+   line-height: 45px;
+   font-size: 2.5vmin;
+   font-style: italic;
+   color:rgb(20, 20, 20);
+}
+.special-item .item-conaiter {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 55px;
+}
+.item-conaiter .container-text {
+   margin: 20px 100px;
+}
+.container-text .number {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 6vmin;
+   color: rgb(54, 45, 95);
+   font-weight: 900;
+   margin-bottom: 15px;
+   display: flex;
+   justify-content: space-between;
+}
+.container-text .number .line {
+   height: 1px;
+   width: 200px;
+   background-color: black;
+   position: relative;
+   top: 25px;
+   right: 190px;
+}
+.container-text h1 {
+   font-family: 'Roboto', sans-serif;
+   margin-left: 30px;
+   font-size: 5vmin;
+   font-weight: 700;
+}
+.container-text span {
+   color: orange;
+}
+.container-text .money {
+   margin-top: 20px;
+}
+
+.container-text p {
+   margin-left: 30px;
+   font-family: 'Josefin Sans', sans-serif;
+   margin-top: 20px;
+   line-height: 20px;
+   font-size: 2.5vmin;
+   text-align: justify;
+   color: rgb(54, 45, 95);
+}
+.container-text a {
+   position: relative;
+   left: 30px;
+   top: 25px;
+   text-decoration: none;
+   color: black;
+   font-size: 2.3vmin;
+   text-transform: uppercase;
+   font-family: 'Roboto Condensed', sans-serif;
+   font-weight: bold;
+   background-color: orange;
+   padding: 10px 20px;
+   border: none;
+   outline: none;
+}
+.container-text a:hover {
+   background-color: transparent;
+   border: 1px solid orange;
+   color: orangered;
+   transition: 0.5s;
+}
+.item-conaiter .container-image {
+   margin: 0 60px;
+}
+.item-conaiter .container-image img {
+   height: 400px;
+   width: 450px;
+}
+
+/* Customer Review Section */
+.customer-review {
+   width: 100%;
+   height: 68vh;
+   background: rgba(0,0,0,0.8) url(bg3.webp);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-blend-mode: darken;
+   margin-top: 10%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.customer-review .review-text {
+   text-align: center;
+   color: #fff;
+   margin-bottom: 100px;
+}
+.review-text h1 {
+   font-size: 8vmin;
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: 900;
+}
+.review-text span {
+   color: orange;
+}
+.review-text p {
+   font-family: cursive;
+   font-size: 2.6vmin;
+   margin-top: 15px;
+   font-style: italic;
+}
+/* Food update section */
+.food-update {
+  margin-top: 12%;
+}
+.food-update .update-text {
+   text-align: center;
+}
+.food-update .update-text h1 {
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 7vmin;
+}
+.food-update .update-text span {
+   color: orange;
+}
+.food-update .update-text p {
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 2.6vmin;
+   margin-top: 15px;
+}
+.food-update .update-images {
+   display: flex;
+   justify-content: center;
+   margin-top: 90px;
+}
+.food-update .update-image1 {
+   margin: 20px;
+   height: 550px;
+   width: 350px;
+   background-color: rgb(241, 241, 241);
+}
+.food-update .update-image1 img {
+   width: 350px;
+}
+.food-update .update-image1:hover {
+   box-shadow: 2px 2px 20px rgba(0,0,0,0.5);
+   transition: all 0.5s ease;
+}
+.update-image1 .update-icon {
+   display: flex;
+   justify-content: space-between;
+   margin: 25px 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.update-image1 .update-content {
+   margin-left: 20px;
+}
+.update-image1 .update-content h1 {
+   font-family:  'Roboto Condensed', sans-serif;
+   color:rgb(21, 20, 27);
+}
+.update-image1 .update-content p {
+   font-family: 'Roboto', sans-serif;
+   margin-top: 15px;
+   line-height: 20px;
+   font-size: 2.2vmin;
+}
+.update-image1 .update-content a {
+   text-decoration: none;
+   color: rgb(36, 34, 34);
+   font-family: 'Roboto Condensed', sans-serif;
+   margin-top: 20px;
+   text-transform: uppercase;
+   font-weight: bold;
+
+}
+.update-image1 .update-content .fa-right-long {
+   margin-top: 25px;
+   color: rgb(36,34,34);
+   margin-left: 5px;
+}
+.update-image1 .update-content a:hover > .fa-right-long {
+   color: orangered;
+   transition: all 0.5s ease;
+   transform: translateX(5px);
+
+}
+
+/* Booking section */
+.booking button {
+   text-align: center;
+   padding: 12px 25px;
+   margin-top: 25px;
+   background: orange;
+   border: none;
+   font-size: 1rem;
+   font-family: 'Roboto Condensed', sans-serif;
+   font-weight: bold;
+   text-transform: uppercase;
+   
+
+}
+.booking button:hover {
+   text-align: center;
+   background-color: transparent;
+   border: 1px solid orange;
+   transition: all 0.5s ease;
+}
+.part4{
+   text-align: center;
+}
+ 
+
+/* Contact Section */
+.contact {
+   width: 100%;
+   height: 60vh;
+   background: #131230;
+}
+.contact .contact-container {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 80px;
+}
+.contact-container div {
+   margin-top: 120px;
+}
+.contact-container h1 {
+   color: orange;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 5vmin; 
+}
+.contact-container p {
+   text-align: justify;
+   margin-top: 20px;
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: bold;
+   color: rgb(116, 111, 111);
+   line-height: 25px;
+}
+
+/* Footer Section */
+.footer  {
+   height: 80px;
+   background-color: #0d0d27;   
+}
+.footer .footer-container {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 50px;
+   
+}
+.footer-content {
+   margin-top: 25px;
+   color: #fff;
+   font-family: 'Roboto Condensed', sans-serif;
+}
+.footer-content span {
+   color:orangered;
+   cursor: pointer;
+}
+.footer-content i {
+   color: red;
+}
+.footer-container .social-link {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.social-link .social-text {
+   margin: 30px 30px;
+   color: #fff;
+   font-family: 'Roboto Condensed', sans-serif;
+}
+.social-link .social-icon {
+   margin: 30px 30px;
+   color: #fff;
+   font-family: 'Roboto Condensed', sans-serif;
+}
+.social-icon a {
+   color: #fff;
+}
+.social-icon a:hover {
+   color: orange;
+   transition: 0.5s;
+}
+.social-icon i {
+   margin: 0 15px;
+   cursor: pointer;
+}
+
+
+/* Mobile view */
+@media (max-width: 820px) {
+   header {
+      height: 80vh;
+   }
+   
+  .logo {
+      padding: 50px;
+  }
+  .logo img {
+   width: 100px;
+   height: 40px;
+  }
+  
+  .bars {
+   display: block;
+  }
+  .header-text {
+   margin-bottom: 160px;
+  }
+  .intro {
+   flex-direction: column;
+   margin-top: 20%;
+  }
+  .intro .intro-picture {
+   margin: 0 auto;
+  }
+  .intro .intro-picture img {
+   height: 450px;
+   width: 450px;
+
+  }
+  .intro .intro-text {
+   width: 100%;
+   margin: 40px 50px;
+  }
+  .main {
+   width: 100%;
+  }
+  .main .main-images {
+   flex-direction: column;
+   margin-left: 35px;
+  }
+  .main .main-images .image1 {
+   width: 400px;
+  }
+  .main .main-images .image1 img {
+   width: 400px;
+  }
+
+  .main .main-text {
+   margin: 0 45px;
+  }
+  .main .main-text p {
+   width: 75%;
+   text-align: justify;
+  }
+  .reservation .reservation-text {
+   text-align: center;
+  }
+  .special-item .item-conaiter {
+   flex-direction: column;
+  }
+  .item-conaiter .container-text {
+   margin: 15px 15px;
+  }
+  .item-conaiter .container-text h1 {
+   margin-left: 10px;
+  }
+
+  .item-conaiter .container-text p {
+   margin-left: 10px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .item-conaiter .container-text a {
+   left: 10px;
+  }
+  .item-conaiter .container-image {
+   margin-top: 15%;
+   margin-left: 20px;
+  }
+  .container-text .number .line {
+   height: 1px;
+   width: 200px;
+   background-color: black;
+   position: relative;
+   top: 15px;
+   right: 200px;
+  }
+  .customer-review {
+   margin-top: 30%;
+  }
+  .food-update {
+   margin-top: 30%;
+  }
+  .food-update .update-images {
+   flex-direction: column;
+   margin-left: 10%;
+   margin-top: 10%;
+  }   
+  .update-image1 .update-icon {
+   flex-direction: column;
+   line-height: 25px;
+  }
+  .book-table {
+   height: 90vh;
+   margin-top: 20%;
+  }
+  .book-table .book-text {
+   margin-top: 20px;
+  }
+  .book-table .input-icons {
+   flex-direction: column;
+   margin-top: 40px;
+
+  }
+  .book-table .input-icons .icon1 {
+   margin: 8px 0;
+
+  }
+  .book-table .input-icons .icon1 input {
+   width: 420px;
+  }
+  .book-table a {
+   margin-top: 20px;
+  }
+  .contact {
+   height: auto;
+
+
+  }
+  .contact-container {
+   flex-direction: column;
+   margin-top: 70px;
+   
+   
+  }
+  .contact-container div {
+   margin: 35px -50px;
+  }
+  .contact-container  p {
+   font-weight: lighter;
+   font-size: normal;
+   
+  }
+  .contact-container img {
+   margin-top: 100px;
+  }
+  .footer {
+   height: auto;
+   
+  }
+  .footer-content p {
+   font-size: smaller;
+   text-align: center;
+  }
+  .footer .footer-container {
+   flex-direction: column;
+   margin: 0 25px;
+  }
+  .footer-container .social-link {
+   justify-content: space-evenly;
+   align-items: center;
+}
+  .social-link .social-text {
+   margin: 30px 5px;
+   text-align: center;
+  }
+  .social-link .social-text p {
+   margin-left: 20px;
+  }
+  
+.footer-container .social-link .social-icon i {
+   margin: 0 10px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
